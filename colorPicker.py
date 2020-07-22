@@ -9,7 +9,7 @@ def click_event(event,x,y,flags,param):
         cv2.putText(img,txt,(x,y),font,1,(255,255,255),1,cv2.LINE_AA)
         cv2.imshow("flash",img)
     
-    if event == cv2.EVENT_RBUTTONDOWN:
+    if event == cv2.EVENT_RBUTTONDOWN:              #   for pick the color
         blue =  img[y,x,0]
         green = img[y,x,1]
         red = img[y,x,2]
